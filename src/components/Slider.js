@@ -34,6 +34,7 @@ const Slider = () => {
       auto();
     }
     return () => clearInterval(slideInterval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSlide]);
 
   return (
@@ -53,7 +54,6 @@ const Slider = () => {
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
                   <hr />
-                  
                 </div>
               </div>
             )}
